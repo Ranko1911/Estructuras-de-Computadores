@@ -1,4 +1,4 @@
-`timescale 1 ns / 10ps
+`timescale 1 ns / 10 ps
 
 module cl_tb;
 

@@ -19,7 +19,7 @@
 - [x] cl
 - [x] ul4
 - [x] fa
-- [ ] sum4
+- [x] sum4
 - [ ] sum4_v2
 - [x] compl1
 

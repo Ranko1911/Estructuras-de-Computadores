@@ -2,5 +2,4 @@ module sum4_v2(output wire[3:0] S, output wire c_out, input wire[3:0] A, input w
 
 assign {c_out, S} = A + B + c_in;
 
-
 endmodule
