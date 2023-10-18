@@ -19,20 +19,20 @@
 - [x] cl
 - [x] ul4
 - [x] fa
-- [] sum4
-- [] sum4_v2
+- [ ] sum4
+- [ ] sum4_v2
 - [x] compl1
 
 ## GTKwave con cada cacharro
 
-- [] mux4_1
-- [] mux2_4
-- [] cl
-- [] ul4
-- [] fa
-- [] sum4
-- [] sum4_v2
-- [] compl1
+- [ ] mux4_1
+- [ ] mux2_4
+- [ ] cl
+- [ ] ul4
+- [ ] fa
+- [ ] sum4
+- [ ] sum4_v2
+- [ ] compl1
 
 
 ## ALU
