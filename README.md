@@ -20,7 +20,7 @@
 - [x] ul4
 - [x] fa
 - [x] sum4
-- [ ] sum4_v2
+- [x] sum4_v2
 - [x] compl1
 
 ## GTKwave con cada cacharro
