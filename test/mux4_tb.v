@@ -30,7 +30,7 @@ begin
   test_b = 1'b1;
   test_c = 1'b0;
   test_d = 1'b0;
-  test_s = 2'b01;
+  test_s = 2'b10;
   #20;  
 
   //output = c
@@ -38,7 +38,7 @@ begin
   test_b = 1'b0;
   test_c = 1'b1;
   test_d = 1'b0;
-  test_s = 2'b10;
+  test_s = 2'b01;
   #20;
 
   //output = d
