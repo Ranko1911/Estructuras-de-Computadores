@@ -2,11 +2,11 @@
 
 module mux2_4_tb;
 
-reg test_out;
+reg [3:0] test_out;
 wire [3:0] test_a, test_b;
 wire test_s;
 
-mux2_4 mux2_4_1(test_out, test_a, test_b, test_s);
+mux2_4 mux2_4_1_ (test_out, test_a, test_b, test_s);
 
 initial
 begin
@@ -14,7 +14,7 @@ begin
     $dumpfile("mux2_4_tb.vcd");
     $dumpvars;
 
-    //vector de test 0
+/*     //vector de test 0
     test_a = 4'b0000;
     test_b = 4'b0000;
     test_s = 1'b0;
@@ -53,8 +53,9 @@ begin
     test_a = 4'b0110;
     test_b = 4'b0110;
     test_s = 1'b0;
-    #20;
+    #20; */
 
+    $finish;
     
 end
 
