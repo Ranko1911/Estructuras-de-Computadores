@@ -14,46 +14,29 @@ begin
     $dumpfile("mux2_4_tb.vcd");
     $dumpvars;
 
-/*     //vector de test 0
+    //salida debe ser a
     test_a = 4'b0000;
-    test_b = 4'b0000;
-    test_s = 1'b0;
-    #20;
-
-    //vector de test 1
-    test_a = 4'b0001;
     test_b = 4'b0001;
     test_s = 1'b0;
-    #20;
+    #10;
 
-    //vector de test 2
-    test_a = 4'b0010;
+    //salida debe ser b
+    test_a = 4'b0000;
+    test_b = 4'b0001;
+    test_s = 1'b1;
+    #10;
+
+    //salida debe ser a
+    test_a = 4'b0001;
     test_b = 4'b0010;
     test_s = 1'b0;
-    #20;
+    #10;
 
-    //vector de test 3
-    test_a = 4'b0011;
-    test_b = 4'b0011;
-    test_s = 1'b0;
-
-    //vector de test 4
-    test_a = 4'b0100;
-    test_b = 4'b0100;
-    test_s = 1'b0;
-    #20;
-
-    //vector de test 5
-    test_a = 4'b0101;
-    test_b = 4'b0101;
-    test_s = 1'b0;
-    #20;
-
-    //vector de test 6
-    test_a = 4'b0110;
-    test_b = 4'b0110;
-    test_s = 1'b0;
-    #20; */
+    //salida debe ser b
+    test_a = 4'b0001;
+    test_b = 4'b0010;
+    test_s = 1'b1;
+    #10;
 
     $finish;
     
