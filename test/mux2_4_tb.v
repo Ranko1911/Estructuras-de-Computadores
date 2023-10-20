@@ -3,7 +3,7 @@
 module mux2_4_tb;
 
 reg [3:0] test_out;
-wire [3:0] test_a, test_b;
+reg [3:0] test_a, test_b;
 wire test_s;
 
 mux2_4 mux2_4_1_ (test_out, test_a, test_b, test_s);
