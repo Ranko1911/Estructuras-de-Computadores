@@ -2,15 +2,15 @@
 
 module fa_tb;
 
-reg test_c_out;
+wire test_c_out;
 wire test_sum;
-wire test_a, test_b, test_c_in;
+reg test_a, test_b, test_c_in;
 
 fa fa_1(test_c_out, test_sum, test_a, test_b, test_c_in);
 
 initial
 begin
-$monitor("tiempo=%0d a=%b b=%b c_in=%b c_out=%b sum=%b", $time, test_a, test_b, test_c_in, test_c_out, test_sum);
+$monitor("tiempo=%0d a=%b b=%b c_in=%b c_out=%b sum=%b", $time, test_a, test_b, test_c_in, test_sum, test_c_out);
 $dumpfile("fa_tb.vcd");
 $dumpvars;
 

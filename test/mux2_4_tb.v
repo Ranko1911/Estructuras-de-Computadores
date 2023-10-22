@@ -10,7 +10,7 @@ mux2_4 mux2_4_1_ (test_out, test_a, test_b, test_s);
 
 initial
 begin
-    $monitor("tiempo=%0d a=%b b=%b s=%b", $time, test_a, test_b, test_s);
+    $monitor("tiempo=%0d a=%b b=%b s=%b out=%b", $time, test_a, test_b, test_s, test_out);
     $dumpfile("mux2_4_tb.vcd");
     $dumpvars;
 

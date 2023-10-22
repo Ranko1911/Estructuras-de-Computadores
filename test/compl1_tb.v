@@ -2,9 +2,9 @@
 
 module compl1_tb;   
 
-reg test_out;
-wire [3:0] test_inp;
-wire test_cpl;
+wire [3:0] test_out;
+reg [3:0] test_inp;
+reg test_cpl;
 
 compl1 compl1_1(test_out, test_inp, test_cpl);
 

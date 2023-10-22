@@ -3,36 +3,44 @@
 module cl_tb;
 
 wire test_out;
-wire test_a, test_b;
-wire [1:0] test_s;
+reg test_a, test_b;
+reg [1:0] test_s;
 
 cl cl_1(test_out, test_a, test_b, test_s);
 
 initial
 begin   
-    $monitor("tiempo=%0d a=%b b=%b suma=%b acarreo=%b", $time, test_a, test_b, test_sum, test_carry);
-    $dumpfile("ha_v1_tb.vcd");
+    $monitor("tiempo=%0d a=%b b=%b test_s=%b saida=%b", $time, test_a, test_b, test_s, test_out);
+    $dumpfile("cl_tb.vcd");
     $dumpvars;
 
-    //vector de test 0
-    test_a = 1'b0;
-    test_b = 1'b0;
-    #20;
-
-    //vector de test 1
+    //sa and b
     test_a = 1'b1;
     test_b = 1'b0;
-    #20;
+    test_s = 2'b00;
+    #10;
 
-    //vector de test 2
+    //a or b
     test_a = 1'b0;
     test_b = 1'b1;
-    #20;
+    test_s = 2'b01;
+    #10;
 
-    //vector de test 3
-    test_a = 1'b1;
+    //a xor b
+    test_a = 1'b0;
     test_b = 1'b1;
-    #20;
+    test_s = 2'b10;
+    #10;
+
+    //not a
+    test_a = 1'b0;
+    test_b = 1'b1; 
+    test_s = 2'b11;
+    #10;
+
+
+
+    //sale la 
 end
 
 

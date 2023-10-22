@@ -14,7 +14,7 @@ mux4 mux4_1 (test_out, test_a, test_b, test_c, test_d, test_s);
 initial
 begin
   $monitor("tiempo=%0d a=%b b=%b c=%b d=%b s=%b", $time, test_a, test_b, test_c, test_d, test_s);
-  $dumpfile("ha_v1_tb.vcd");
+  $dumpfile("mux4_tb.vcd");
   $dumpvars;
 
   //output = a

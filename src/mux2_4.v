@@ -7,5 +7,5 @@ module mux2_4(output wire [3:0] Out, input wire [3:0] A, input wire [3:0] B, inp
     mux2_1_i3 mux_2(mux2_out , A[1] , B[1] , s);
     mux2_1_i3 mux_3(mux3_out , A[2] , B[2] , s);
     mux2_1_i3 mux_4(mux4_out , A[3] , B[3] , s);
-    assign Out = {mux1_out, mux2_out, mux3_out, mux4_out};
+    assign Out = {mux4_out, mux3_out, mux2_out, mux1_out};
     endmodule
