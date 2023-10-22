@@ -5,7 +5,7 @@ module mux2_4_tb;
 wire [3:0]  test_out;
 reg [3:0]   test_a, test_b;
 reg test_s;
-
+// test_s = 0 -> test_out = test_a
 mux2_4 mux2_4_1_ (test_out, test_a, test_b, test_s);
 
 initial
