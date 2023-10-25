@@ -1,0 +1,64 @@
+$date
+	Sun Oct 22 14:27:38 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module cl_tb $end
+$var wire 1 ! test_out $end
+$var reg 1 " test_a $end
+$var reg 1 # test_b $end
+$var reg 2 $ test_s [1:0] $end
+$scope module cl_1 $end
+$var wire 2 % S [1:0] $end
+$var wire 1 " a $end
+$var wire 1 & and_ $end
+$var wire 1 # b $end
+$var wire 1 ' inv_ $end
+$var wire 1 ( or_ $end
+$var wire 1 ) xor_ $end
+$var wire 1 ! out $end
+$scope module mux1 $end
+$var wire 2 * S [1:0] $end
+$var wire 1 & a $end
+$var wire 1 ( b $end
+$var wire 1 ) c $end
+$var wire 1 ' d $end
+$var reg 1 ! out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 *
+1)
+1(
+0'
+0&
+b0 %
+b0 $
+0#
+1"
+0!
+$end
+#1000
+1!
+1'
+b1 $
+b1 %
+b1 *
+1#
+0"
+#2000
+b10 $
+b10 %
+b10 *
+#3000
+b11 $
+b11 %
+b11 *
+#4000

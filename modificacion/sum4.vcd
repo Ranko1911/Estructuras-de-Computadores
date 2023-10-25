@@ -1,0 +1,123 @@
+$date
+	Sun Oct 22 13:55:57 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module sum4_tb $end
+$var wire 1 ! test_c_out $end
+$var wire 4 " test_S [3:0] $end
+$var reg 4 # test_A [3:0] $end
+$var reg 4 $ test_B [3:0] $end
+$var reg 1 % test_c_in $end
+$scope module mat $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 % c_in $end
+$var wire 1 ( c_out2 $end
+$var wire 1 ) c_out1 $end
+$var wire 1 * c_out0 $end
+$var wire 1 ! c_out $end
+$var wire 4 + S [3:0] $end
+$scope module fa0 $end
+$var wire 1 , a $end
+$var wire 1 - b $end
+$var wire 1 % c_in $end
+$var wire 1 . sum $end
+$var wire 1 * c_out $end
+$upscope $end
+$scope module fa1 $end
+$var wire 1 / a $end
+$var wire 1 0 b $end
+$var wire 1 * c_in $end
+$var wire 1 1 sum $end
+$var wire 1 ) c_out $end
+$upscope $end
+$scope module fa2 $end
+$var wire 1 2 a $end
+$var wire 1 3 b $end
+$var wire 1 ) c_in $end
+$var wire 1 4 sum $end
+$var wire 1 ( c_out $end
+$upscope $end
+$scope module fa3 $end
+$var wire 1 5 a $end
+$var wire 1 6 b $end
+$var wire 1 ( c_in $end
+$var wire 1 7 sum $end
+$var wire 1 ! c_out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+b0 +
+0*
+0)
+0(
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+b0 "
+0!
+$end
+#1000
+11
+b1010 "
+b1010 +
+17
+1*
+1(
+1-
+13
+1,
+12
+b101 $
+b101 '
+b101 #
+b101 &
+#2000
+b1011 "
+b1011 +
+1.
+1%
+#3000
+14
+1)
+1!
+b1110 "
+b1110 +
+0.
+10
+16
+1/
+15
+0%
+b1111 $
+b1111 '
+b1111 #
+b1111 &
+#4000
+b1111 "
+b1111 +
+1.
+1%
+#5000

@@ -10,10 +10,13 @@ reg [3:0] uno = 4'b0001; */
   wire op_2;
   wire cpl;
 
-  assign add1 = ALUOP[0];
-  assign op_1 = ((l) | (ALUOP[1] & ~ALUOP[0])); 
-  assign op_2 = ((l) | (ALUOP[1] & ~ALUOP[0])); 
-  assign cpl = (~l & ~ALUOP[1] & ALUOP[0]);
+//add1 es 1
+  assign add1 = 1'b1;  
+  assign op_1 = ((l) | (ALUOP[1] & ~ALUOP[0]));
+  assign op_2 = ((l) | (~ALUOP[1] & ALUOP[0]) | (ALUOP[1] & ~ALUOP[0]));
+  assign cpl  =  (~l & ~ALUOP[1]);
+/*   assign op_2 = ((l) | (ALUOP[1] & ~ALUOP[0])); 
+  assign cpl = (~l & ~ALUOP[1] & ALUOP[0]); */ 
 
   //cables de conexion
   wire [3:0] arriba;
@@ -42,7 +45,7 @@ reg [3:0] uno = 4'b0001; */
 
   //zero, carry y sign  
   assign zero = ~R[3] & ~R[2] & ~R[1] & ~R[0];
-  assign sign =  R[3];
+  assign sign = R[3];
 
 
 endmodule 
